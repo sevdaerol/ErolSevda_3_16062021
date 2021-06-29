@@ -127,9 +127,6 @@ h3{
 .icons{
     margin-right: 15px;
 }
-.icons:hover{
-    color: #9356dc;
-}
 
 /*restaurants*/
 h4{
@@ -197,10 +194,36 @@ h5{
     font-size: 120%;
     margin: 0%;
 }
+.hearts{
+   display: flex;
+   align-items: center;
+   margin-right: 4%;
+}
 .heart{
     font-size: 25px;
     margin: 5%;
+   cursor: pointer;
+   transition: transform 450ms ease-in-out;
 }
+.heart:hover{
+    overflow: hidden;
+    width: 0%;
+}
+.heartfull{
+    font-size: 25px;
+    overflow: hidden;
+    position: absolute;
+    width: 0%;
+    cursor: pointer;
+    transition: transform 450ms ease-in-out;
+}
+.heartfull:hover{
+    overflow: auto;
+    transform: scale(1.13);
+    color: #FF79DA;
+    width: 4%;
+}
+
 /*footer*/
 footer{
     display: flex;
