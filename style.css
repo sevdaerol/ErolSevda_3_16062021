@@ -207,8 +207,8 @@ h5{
 .heart:hover{
     width: 0%;
     opacity: 0;
-    transition: transform 950ms ease-in-out;
     cursor: pointer;
+    color: transparent;
 }
 .heartfull{
     font-size: 27px;
@@ -216,14 +216,17 @@ h5{
     position: absolute;
     cursor: pointer;
     margin: -1px;
+    transition: transform 450ms ease-in-out;
 }
 .heartfull:hover{
     opacity: 1;
     margin-right: 15px;
-    color: #FF79DA;
-    width: 4%;
-    transition: transform 1000ms ease-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 10%;
+    transition: transform 450ms ease-in-out;
     background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100% );
+    transform: scale(1);
 }
 
 /*footer*/
