@@ -223,8 +223,8 @@ h5{
     position: absolute;
     cursor: pointer;
     margin: -1px;
-    transition: transform 350ms ease-in-out;
-    transition-property: transform 350ms;
+    transition: transform 750ms ease-in-out;
+    transition-property: transform 750ms;
 }
 .heartfull:hover{
     opacity: 1;
@@ -232,7 +232,7 @@ h5{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 10%;
-    transition: transform 350ms ease-in-out;
+    transition: transform 750ms ease-in-out;
     background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100% );
     transform: scale(1);
 }
@@ -316,22 +316,36 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform: translateY(-80);
+    opacity: 1;
+    animation: steps(1s forwards);
 }
 .cartes_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.global{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background-color: white;
+    width: 100%;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
     -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
 }
 .description_menu{
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
     padding: 2%;
+}
+.details{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 p{
     font-family: 'Roboto-Regular';
@@ -339,22 +353,24 @@ p{
 }
 .prix_menu{
     display: flex;
+    justify-content: center;
+    width: 20%;
     font-family: 'Roboto-Regular';
     font-weight: bold;
-    padding: 2%;
 }
 .check{
-    opacity: 0;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4%;
+    margin-bottom: 3%;
     background-color: #99e2d0;
     color: white;
     font-size: 1.3rem;
     border-radius: 0px 20px 20px 0px;
     transition: transform 350ms ease-in-out;
     cursor: pointer;
+    padding: 3%;
 }
 .check:hover{
     opacity: 1;
@@ -457,8 +473,11 @@ p{
    .section_menu{
        margin-top: -20%;
    }
-   .cartes_menu{
+   .global{
        border-radius: 10px 10px 10px 10px;
+   }
+   .check{
+       border-radius: 0px 10px 10px 0px;
    }
    .titres_menu{
        width: 13%;
