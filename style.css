@@ -62,7 +62,7 @@ h3{
     background: #FF79DA;
     background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
     background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    background-color: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -73,6 +73,7 @@ h3{
 }
 .explorer:hover{
     Transform: scale(1.01);
+    opacity: 0.9;
 }
 
 /*fonctionnement*/
@@ -103,8 +104,11 @@ h3{
 }
 .carte_fonctionnement:hover{
     Transform: scale(1.01);
-    background-color: darken(#f2f2f2, 10);
-   
+    background-color: #e9e9e9;
+    color: #9356DC;
+}
+.text{
+    color: black;
 }
 .section_nombre{
     display: flex;
@@ -129,6 +133,7 @@ h3{
 .icons{
     margin-right: 15px;
 }
+
 
 /*restaurants*/
 h4{
@@ -179,6 +184,7 @@ h4{
     font-weight: 700;
     margin: 10px;
     padding: 5px;
+    border-radius: 3px;
 }
 .description_restaurants{
     display: flex;
@@ -208,7 +214,8 @@ h5{
     width: 0%;
     opacity: 0;
     cursor: pointer;
-    color: transparent;
+    color: #9356DC;
+    transform: scale(0.2);
 }
 .heartfull{
     font-size: 27px;
@@ -216,7 +223,8 @@ h5{
     position: absolute;
     cursor: pointer;
     margin: -1px;
-    transition: transform 450ms ease-in-out;
+    transition: transform 350ms ease-in-out;
+    transition-property: transform 350ms;
 }
 .heartfull:hover{
     opacity: 1;
@@ -224,7 +232,7 @@ h5{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 10%;
-    transition: transform 450ms ease-in-out;
+    transition: transform 350ms ease-in-out;
     background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100% );
     transform: scale(1);
 }
@@ -318,12 +326,12 @@ a{
     margin-bottom: 3%;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 2%;
     -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
 }
 .description_menu{
     width: 80%;
+    padding: 2%;
 }
 p{
     font-family: 'Roboto-Regular';
@@ -333,13 +341,32 @@ p{
     display: flex;
     font-family: 'Roboto-Regular';
     font-weight: bold;
+    padding: 2%;
 }
 .check{
-    overflow: hidden;
+    opacity: 0;
     display: flex;
     align-items: center;
-    width: 0%;
-    height: 50px;
+    justify-content: center;
+    padding: 4%;
+    background-color: #99e2d0;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 0px 20px 20px 0px;
+    transition: transform 350ms ease-in-out;
+    cursor: pointer;
+}
+.check:hover{
+    opacity: 1;
+    transform: translate(100px);
+}
+.circle{
+
+  
+}
+.circle:hover{
+    transform: rotate(1turn);
+    transition: transform 500ms ease-in-out;
 }
 .commander{
     display: flex;
@@ -361,6 +388,7 @@ p{
 }
 .commander:hover{
     Transform: scale(1.01);
+    opacity: 0.9;
 }
 
 
