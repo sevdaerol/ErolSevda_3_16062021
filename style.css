@@ -8,6 +8,55 @@
 }
 
 /*PAGE D'ACCEUIL*/
+/*loader*/
+.loader--section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    animation: loader--bar ease-in-out 3s forwards;
+}
+.loader{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 30%;
+}
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1.0);
+    }
+    
+}
+.loader--bar{
+    background-color: #99e2d0;
+    width: 10%;
+    height: 75%;
+    animation: bars 1000ms backwards infinite ease-in-out alternate;
+}
+.loader--bar1{
+    animation-delay: 200ms;
+}
+.loader--bar2{
+    animation-delay: 400ms;
+}
+.loader--bar3{
+    animation-delay: 600ms;
+}
+.loader--bar4{
+    animation-delay: 800ms;
+}
+.loader--bar5{
+    animation-delay: 1000ms;
+}
 /*header*/
 body{
     margin: 0%;
@@ -342,10 +391,11 @@ a{
     width: 100%;
     padding: 2%;
 }
-.details{
+.details--description{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    width: 80%;
 }
 p{
     font-family: 'Roboto-Regular';
@@ -475,6 +525,10 @@ p{
    }
    .global{
        border-radius: 10px 10px 10px 10px;
+       width: 85%;
+   }
+   .description_menu{
+       width: 95%;
    }
    .check{
        border-radius: 0px 10px 10px 0px;
