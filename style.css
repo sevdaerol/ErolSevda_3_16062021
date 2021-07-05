@@ -493,8 +493,8 @@ p{
     transition: transform 1s ease-in-out;
 }
 @keyframes rotate {
-    0%{
-        translate: ;
+    100%{
+        transform: translateX(-2em);
     }
 }
 .check{
@@ -506,13 +506,13 @@ p{
     color: white;
     font-size: 1.3rem;
     border-radius: 0px 20px 20px 0px;
-    transition: transform 350ms ease-in-out;
     cursor: pointer;
-    transform: translateX(-2em);
     margin-left: 40px;
 }
 .check:hover{
     opacity: 1;
+    transform: translateX(-2em);
+    transition: rotate 350ms ease-in-out;
 }
 @keyframes cercle {
     0%{
