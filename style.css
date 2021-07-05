@@ -476,10 +476,8 @@ p{
     font-family: 'Roboto-Regular';
     font-weight: bold;
 }
-.circle{
-    opacity: 0;
-}
-.cartes_menu:hover .circle{
+
+.cartes_menu:hover .check i{
     opacity: 1;
     transform: translateX(-2em);
     transition: rotate 350ms ease-in-out;
