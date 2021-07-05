@@ -397,6 +397,15 @@ a{
     margin-bottom: 3%;
     border-bottom: 2px solid #99e2d0;
 }
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
 @keyframes cmanim {
     0%{
         transform: translateY(10px);
@@ -408,20 +417,15 @@ a{
     }
     
 }
-.menus{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-}
 .cartes_menu{
     display: flex;
     justify-content: space-between;
     animation: cmanim 700ms 400ms both ease-in-out;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+    box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
 }
 @keyframes globalanim {
     0%{
