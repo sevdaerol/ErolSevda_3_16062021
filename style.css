@@ -498,7 +498,7 @@ p{
     }
 }
 .check{
-    opacity: 0;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
