@@ -454,6 +454,9 @@ a{
     padding: 2%;
 }
 .details--description{
+    font-size: 90%;
+}
+.details--description:hover{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
