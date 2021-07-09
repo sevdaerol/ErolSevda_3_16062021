@@ -7,6 +7,7 @@
     src:url(fonts/Roboto-Regular.ttf)
 }
 
+
 /*PAGE D'ACCEUIL*/
 /*loader*/
 @keyframes loaderspin {
@@ -104,8 +105,7 @@ h1{
     border-radius: 10px;
     background-color: #f2f2f2;
     width: 20%;
-    padding: 15px;
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+    padding: 15px; 
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
     font-family: 'Roboto-Regular';
     text-align: center;
@@ -137,13 +137,13 @@ h3{
     width: 50%;
     border-radius: 25px;
     background: #FF79DA;
-    background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-    background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+    
+
     background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 40px;
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+     
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
     color: white;
     cursor: pointer;
@@ -176,7 +176,7 @@ h3{
     border-radius: 15px;
     background-color: #f2f2f2;
     cursor: pointer;
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+   
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
     margin-bottom: 30px;
 }
@@ -240,7 +240,7 @@ h4{
     height: 300px;
     border-radius: 15px 15px 15px 15px;
     cursor: pointer;
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+    
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
     margin-top: 15px;
     margin-bottom: 35px;
@@ -309,7 +309,6 @@ h5{
     transition: 350ms ease-in-out;
     transform: scale(1);
     background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100% );
-   
 }
 
 /*footer*/
@@ -319,7 +318,7 @@ footer{
     align-items: center;
     background-color: #333333;
     color: white;
-}
+}   
 .footer_ul{
     display: flex;
     list-style-type: none;
@@ -414,7 +413,6 @@ a{
     margin-right: 5%;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
 }
 .cartes_menu:hover .check{
@@ -485,10 +483,7 @@ p{
     width: 50%;
     border-radius: 25px;
     background: #FF79DA;
-    background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-    background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
     background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-    -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
     box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26);
     padding: 15px;
     margin-left: 23%;
@@ -515,8 +510,7 @@ p{
         display: flex;
         justify-content: center;
         width: 100%;
-        position: relative;
-        -webkit-box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.26); 
+        position: relative; 
         box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.26);
     }
     .localisation{
